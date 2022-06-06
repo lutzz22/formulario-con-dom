@@ -4,11 +4,11 @@ let modal = document.querySelector('.modal')
 
 const envioFormulario=(event)=> {
     event.preventDefault();
-    const nombreApellido=document.querySelector('#floatingName').value
+    let nombreApellido=document.querySelector('#floatingName').value
     console.log(nombreApellido)
-    const email=document.querySelector('#floatingInput').value
+    let email=document.querySelector('#floatingInput').value
     console.log(email)
-    const comentario=document.querySelector('#floatingTextarea').value
+    let comentario=document.querySelector('#floatingTextarea').value
     console.log(comentario)
 
     modal.classList.toggle('modal-header')
@@ -18,7 +18,7 @@ const envioFormulario=(event)=> {
     const infoEmail=document.querySelector('#data-email')
     infoEmail.textContent=email;
     const infoComent=document.querySelector('#data-mensaje')
-    infoComent.textContent=comentario;
+    infoComent.textContent=comentario;    
 }
 
 const cierreFormulario=()=>{
