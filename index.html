@@ -30,7 +30,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <form>
+                    <form onsubmit="envioFormulario(event)">
                         <div class="form-floating mb-3">
                             <input type="text" class="form-control" id="floatingName" placeholder="Nombre">
                             <label for="floatingName">Nombre</label>
@@ -43,7 +43,7 @@
                             <textarea class="form-control" placeholder="Dejá tu comentario" id="floatingTextarea" style="height: 100px"></textarea>
                             <label for="floatingTextarea">Mensaje</label>
                           </div>
-                        <button type="submit" class="btn" style="background-color: #09796e; color: white;">ENVIAR</button>
+                        <button type="submit" class="btn" style="background-color: #09796e; color: white;" >ENVIAR</button>
                       </form>
                 </div>
         </section>
@@ -63,11 +63,11 @@
                       <!-- La información capturada debe ser seteada en los span con los id: data-nombre, data-email,data-mensaje -->
                       <p><span class="h6">Nombre: </span><span id="data-nombre"></span></p>
                       <p><span class="h6">Email: </span><span id="data-email"></span></p>
-                      <p><span class="h6">Mensaje</span><span id="data-mensaje"></span></p>
+                      <p><span class="h6">Mensaje:</span><span id="data-mensaje"></span></p>
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="cerrar">Cerrar</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="cerrar" onclick="cierreFormulario()">Cerrar</button>
                 </div>
               </div>
             </div>
